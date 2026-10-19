@@ -1,0 +1,11 @@
+{
+    "model_name": "Logistic Regression",
+    "threshold": 0.35,
+    "risk_categories": {
+        "low": "Below 0.35",
+        "medium": "0.35 to below 0.60",
+        "high": "0.60 and above"
+    },
+    "target": "Churn",
+    "positive_class": "Yes"
+}

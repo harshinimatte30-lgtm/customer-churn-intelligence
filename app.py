@@ -162,10 +162,10 @@ with gr.Blocks(
                 label="Payment method"
             )
             monthly = gr.Number(
-                value=70.0, minimum=0, label="Monthly charges"
+                value=70.0, label="Monthly charges"
             )
             total = gr.Number(
-                value=840.0, minimum=0, label="Total charges"
+                value=840.0, label="Total charges"
             )
 
         with gr.Column():
@@ -199,4 +199,5 @@ with gr.Blocks(
     """)
 
 if __name__ == "__main__":
-    demo.launch()
+    port = int(os.environ.get("PORT", 7860))
+    demo.launch(server_name="0.0.0.0", server_port=port)
